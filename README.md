@@ -1,2 +1,3 @@
-# action-filters-dotnetcore-webapi
-This repo contains the source for the Action Filters blog post on Code Maze
+# Content Negotiation In ASP.NET Core Web API
+
+Examples included in the blog post: https://code-maze.com/content-negotiation-dotnet-core/
