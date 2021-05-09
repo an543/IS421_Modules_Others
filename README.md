@@ -1,1 +1,5 @@
-# Content Negotiation In ASP.NET Core Web API
+# Professor Williams
+# IS 421-002
+# Andy Nguyen 
+# Module 15 - JWT 
+
