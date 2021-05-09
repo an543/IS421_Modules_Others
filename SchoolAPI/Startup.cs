@@ -9,6 +9,11 @@ using Microsoft.Extensions.Hosting;
 using NLog;
 using SchoolAPI.Extensions;
 using System.IO;
+using ActionFilters.Filters;
+using Entities.Helpers;
+using Entities.Models;
+using Repository;
+using SchoolAPI.ActionFilters;
 
 namespace SchoolAPI
 {
@@ -36,6 +41,34 @@ namespace SchoolAPI
             });
             services.ConfigureSwagger();
             services.AddControllers();
+
+            /*
+            services.AddControllers(config =>
+            {
+                config.Filters.Add(new GlobalFilterExample());
+            });
+            */
+
+            services.AddControllers(config =>
+                {
+                    config.RespectBrowserAcceptHeader = true;
+                    config.ReturnHttpNotAcceptable = true;
+                }).AddXmlDataContractSerializerFormatters()
+                .AddCoursesCSVFormatter()
+                .AddSectionsCSVFormatter()
+                .AddAssignmentsCSVFormatter()
+                .AddUsersCSVFormatter();
+
+
+            services.AddScoped<ActionFilterExample>();
+            //services.AddScoped<ControllerFilterExample>();
+            services.AddScoped<ValidationFilterAttribute>();
+            services.ConfigureRepositoryWrapper();
+            services.AddAuthentication();
+            services.ConfigureIdentity();
+            services.ConfigureJWT(Configuration);
+            services.AddScoped<IAuthenticationManager, AuthenticationManager>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,6 +99,7 @@ namespace SchoolAPI
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -4,14 +4,16 @@ using Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace SchoolAPI.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    partial class RepositoryContextModelSnapshot : ModelSnapshot
+    [Migration("20210430221744_InitialData")]
+    partial class InitialData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -267,107 +269,107 @@ namespace SchoolAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "9ff9edbd-3b4f-406b-bcd3-126f72452bb7",
+                            Id = "0d8d07b4-4167-419d-93bc-8bb700c65fc8",
                             AccessFailedCount = 0,
                             Age = 0,
-                            ConcurrencyStamp = "57948f71-9c6d-4126-8f1b-b154d4731796",
+                            ConcurrencyStamp = "f89c7a8f-c0fd-4fbf-9347-b779eca2818a",
                             EmailConfirmed = false,
                             Guid = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
                             LockoutEnabled = false,
                             Name = "kwilliams",
                             OrganizationId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ec5fa6f8-084a-42cb-ba12-3044f6b90fea",
+                            SecurityStamp = "adef8142-1799-46f7-8138-eb49150c3231",
                             TwoFactorEnabled = false
                         },
                         new
                         {
-                            Id = "66a3a599-1aff-4678-9c89-531e02016bec",
+                            Id = "178d1cab-b975-4957-9b86-af575808e8c3",
                             AccessFailedCount = 0,
                             Age = 0,
-                            ConcurrencyStamp = "ff326384-d1e6-4fa3-b6fa-9321fcce921f",
+                            ConcurrencyStamp = "68503c5b-8cc3-490f-873b-86841385bd1c",
                             EmailConfirmed = false,
                             Guid = new Guid("86dba8c0-d178-41e7-938c-ed49778fb52a"),
                             LockoutEnabled = false,
                             Name = "ka393939",
                             OrganizationId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f4f0b9f9-fc10-40cc-a11f-48066383e445",
+                            SecurityStamp = "ba4eb253-c8fb-4e90-9468-e054127eeb91",
                             TwoFactorEnabled = false
                         },
                         new
                         {
-                            Id = "b7dcb72b-50db-4e56-a6f5-0f3cc4084bf4",
+                            Id = "f59eee08-3806-47ec-8b8a-723ec2d2d057",
                             AccessFailedCount = 0,
                             Age = 0,
-                            ConcurrencyStamp = "dc0c5245-c81f-44a2-92df-c62f1bb4f9ca",
+                            ConcurrencyStamp = "7c073015-b544-47c6-946a-bee9188b9743",
                             EmailConfirmed = false,
                             Guid = new Guid("021ca3c1-0deb-4afd-ae94-2159a8479811"),
                             LockoutEnabled = false,
                             Name = "kaw3939",
                             OrganizationId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "cc91971e-bd4d-498d-98a0-3a47957170b8",
+                            SecurityStamp = "75831785-4e93-4030-8e4b-de1a0aebcb65",
                             TwoFactorEnabled = false
                         },
                         new
                         {
-                            Id = "2e20fdb8-5abf-4e9f-9627-2c4ae84a6793",
+                            Id = "9a1d0c38-11b5-44b9-8a8d-3ec23474f7bc",
                             AccessFailedCount = 0,
                             Age = 21,
-                            ConcurrencyStamp = "8abc61d0-1d19-4794-a8b3-f1833f42f76a",
+                            ConcurrencyStamp = "16e5bc9c-0e09-41ff-a099-771d23288b2f",
                             EmailConfirmed = false,
                             Guid = new Guid("021ca3c1-0deb-4afd-ae94-2159a8479812"),
                             LockoutEnabled = false,
                             Name = "Tomas",
                             OrganizationId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "440db601-0bbc-4509-ad6b-b6d272180d6a",
+                            SecurityStamp = "85f84fb3-4e7b-45b4-a6e7-fd8ee2383cdc",
                             TwoFactorEnabled = false
                         },
                         new
                         {
-                            Id = "e83ddad2-978a-4892-af1e-c0f18e427e5e",
+                            Id = "4c67bc75-fc83-435a-9a4a-c95ca7aab524",
                             AccessFailedCount = 0,
                             Age = 25,
-                            ConcurrencyStamp = "be14e551-5e95-4906-95a0-d026782028e0",
+                            ConcurrencyStamp = "7fdecb41-4521-462e-902a-fcb632b5ea17",
                             EmailConfirmed = false,
                             Guid = new Guid("021ca3c1-0deb-4afd-ae94-2159a8479813"),
                             LockoutEnabled = false,
                             Name = "Natalie",
                             OrganizationId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e032d2ff-659e-465f-a481-747f0422c25b",
+                            SecurityStamp = "e42b3f2c-1b9b-4097-b824-acb1306a6daf",
                             TwoFactorEnabled = false
                         },
                         new
                         {
-                            Id = "791a1f07-bc93-4372-8292-840a8d9c58cf",
+                            Id = "6ec1ad53-e678-4d2e-bf33-906aeb7287c8",
                             AccessFailedCount = 0,
                             Age = 31,
-                            ConcurrencyStamp = "db0cf38e-0a62-4cf8-8eea-c9c391ae6dff",
+                            ConcurrencyStamp = "55ef08a9-b713-447c-ab55-db2a7cf8effb",
                             EmailConfirmed = false,
                             Guid = new Guid("021ca3c1-0deb-4afd-ae94-2159a8479814"),
                             LockoutEnabled = false,
                             Name = "Ethan",
                             OrganizationId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ffc0be28-03a0-46dd-a0f1-50672d99dc19",
+                            SecurityStamp = "ce798976-c046-4c83-9fc6-77167fc08f28",
                             TwoFactorEnabled = false
                         },
                         new
                         {
-                            Id = "799e32d9-85bf-4853-98ec-d4907f0c5119",
+                            Id = "a07ea024-d030-4022-9eea-b8dd22af3ac0",
                             AccessFailedCount = 0,
                             Age = 28,
-                            ConcurrencyStamp = "dcf33756-6aaf-4977-bc17-27fd56a6a68f",
+                            ConcurrencyStamp = "f9e98d85-7cf7-4757-8ad8-c212e66ff9d8",
                             EmailConfirmed = false,
                             Guid = new Guid("021ca3c1-0deb-4afd-ae94-2159a8479815"),
                             LockoutEnabled = false,
                             Name = "Dan",
                             OrganizationId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "0119dfee-c74e-44d1-9898-1f4a051acb8f",
+                            SecurityStamp = "3b89fcfb-25b8-441a-81f3-69c8b7d5ea43",
                             TwoFactorEnabled = false
                         });
                 });
@@ -401,22 +403,22 @@ namespace SchoolAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "8dcd8885-edc2-4153-9e6e-549921361460",
-                            ConcurrencyStamp = "cc8fbed0-3346-4029-a02d-4039e94b187f",
+                            Id = "b53c5611-8876-4296-8301-b4760854e639",
+                            ConcurrencyStamp = "515445cd-bd71-49ca-9123-c67f45c51708",
                             Name = "Authenticated",
                             NormalizedName = "AUTHENTICATED"
                         },
                         new
                         {
-                            Id = "363f07c0-4c10-4621-b5de-23d21e34717b",
-                            ConcurrencyStamp = "5dc3caeb-fd33-46e5-8bfc-a236c9f8e2aa",
+                            Id = "ef92f24c-c9bf-444f-9079-9b1ebae6c902",
+                            ConcurrencyStamp = "4b29fa15-805c-44fb-9cb5-8103d93b3e5f",
                             Name = "Staff",
                             NormalizedName = "STAFF"
                         },
                         new
                         {
-                            Id = "9ee347fd-0157-43e8-a961-032ab98a60ac",
-                            ConcurrencyStamp = "0505546a-a5e9-4ef2-81f7-75631d5d83a8",
+                            Id = "e1882766-1f47-4577-a989-3d148aa00218",
+                            ConcurrencyStamp = "ea042622-282b-43a7-8b25-281a30285ba6",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
